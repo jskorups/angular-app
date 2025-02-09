@@ -10,6 +10,7 @@ import { Course } from "./model/course";
 export class CourseCardComponent {
   readonly course = input<Course>();
   courseSelected = output<Course>();
+  readonly index = input.required<number>();
 
   onCourseViewed() {
     console.log("kespa");
